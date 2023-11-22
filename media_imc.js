@@ -9,7 +9,7 @@ while (terminou == false) {
     var peso = parseFloat(prompt('Digite o seu peso'))
     var altura = parseFloat(prompt('Digite a sua altura'))
     var ver_imc = peso / altura ** 2;
-    somaIMCs += imc
+    somaIMCs += ver_imc
     if(ver_imc > 30) pessoas_imc_maior30++
     alert('IMC da pessoa: ' + ver_imc.toFixed(2))
     var deseja_terminar = prompt('Deseja terminar? (s)im ou (n)ão')
@@ -18,7 +18,7 @@ while (terminou == false) {
         var media_imc = (somaIMCs / totalpessoas).toFixed(2)
         alert(`Programa finalizado
                 Quantidade de pessoas com IMC > 30: ${pessoas_imc_maior30}
-                Quantidade de oessias avaliadas: ${totalpessoas}
+                Quantidade de pessioas avaliadas: ${totalpessoas}
                 Média dos IMCs: ${media_imc}
                 `)
         }
